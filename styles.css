@@ -1,0 +1,243 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Bai Jamjuree",sans-serif;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.title_logo{
+    width:130px 
+}
+.text{
+    text-align: center;
+}
+header{
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color:hsl(193, 100%, 96%) ;
+    padding-top: 4rem;
+}
+.text p{
+    line-height: 1.6rem;
+        font-size: 1.4rem;
+}
+.st{
+    padding: 1.4rem 7rem ;
+    border-radius: 18px;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+}
+@media screen and (min-width:600px) {
+    header{
+    background-image: url(images/bg-hero-desktop.svg);
+
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start;
+    } 
+    main .text{
+        margin-top: 4rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .text p{
+       font-size: 1.8rem;
+       line-height: 3rem;
+    }
+    .text{
+        text-align: left;
+    }
+body{
+}
+.title_logo{
+    width:200px;
+ }
+
+}
+main{
+    margin-block: 3rem ;
+}
+main button{
+    margin-bottom: 5rem;
+}
+.img_l{
+    width: 100%;
+    margin-inline:auto ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+button{
+    outline: 0;
+    border: 0;
+    cursor:pointer;
+}
+.nav{
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+
+/* section 2 */
+
+.card{
+    display: grid;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 0.3 bisque;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin: 4rem auto;
+    background-color: white;
+    padding-block: 2rem;
+    padding-left: 2rem;
+    border: 1px solid rgb(212, 208, 208);
+
+}
+.card h2{
+    font-size: 2rem;
+}
+
+.card p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    
+}
+.alter{
+    margin-bottom: 140px;
+}
+.card .img_l{
+    width: 80%;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+@media screen and (min-width:600px) {
+    .card{
+        grid-template-columns: repeat(2,50%);
+    }
+    .alter article:nth-child(odd) .text{
+       order:-1
+    }
+    
+header,footer{
+    padding-inline: 6rem;
+}
+}
+/* section three */
+.card-2{
+    text-align: center;
+    max-width:300px;
+    padding: 2rem ;
+    position: absolute;
+    top: -80px;
+    left: 40px;
+    color: hsl(208, 11%, 55%);
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid rgb(212, 208, 208);
+    margin-inline: auto;
+    font-size: 1.6rem;
+}
+
+.card-2 .nav{
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  padding-block: 1.5rem;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    position: relative;
+    padding-top: 100px;
+    font-size: 1.8rem;
+    background-color:   hsl(192, 100%, 9%);
+}
+header button{
+    background-color: white;
+    margin-right: 15px;
+}
+.imf{
+    display: flex;
+     align-items: flex-start;
+     gap: 1rem;
+     /* margin-block: 0.6rem; */
+}
+.imf p{
+    margin-top: 0;
+}
+.oo{
+    max-width: 220px;
+}
+.re >*{
+  margin-top: 1rem;
+}
+.b{
+    margin-bottom: 1rem;
+}
+.re{
+    margin-block:0.4rem  0;
+}
+footer img{
+    /* margin-right: 1rem; */
+    vertical-align: center;
+}
+li{
+    list-style-type: none;
+}
+.last{
+    font-size: 1.6rem;
+    opacity: 0.7;
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    .last{
+    align-self:flex-end;
+    }
+    .rf{
+        display:grid;
+        gap: 3rem;
+
+        grid-template-columns: repeat(4,1fr);
+    }
+    .card-2{
+        left:400px;
+    }
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    color: white;
+    place-content: center;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.icon:hover{
+    color: hsl(322, 100%, 66%) ;
+    border: 1px solid hsl(322, 100%, 66%);
+}
+.ff{
+    display: flex;
+    gap: 8px;
+    max-width: 80px;
+    justify-content: center;
+    max-width:100px;
+    margin-top: 10px;
+    margin-left: 130px;
+}
