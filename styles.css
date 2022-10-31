@@ -19,6 +19,7 @@ header{
     background-image: url(images/bg-hero-mobile.svg);
     background-color:hsl(193, 100%, 96%) ;
     padding-top: 4rem;
+    paddding-left:12px;
 }
 .text p{
     line-height: 1.6rem;
